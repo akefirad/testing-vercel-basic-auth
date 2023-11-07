@@ -31,25 +31,25 @@ export default function Index(props) {
       </Text>
       <List>
         <li>
-          <Link href="https://subdomain-1.vercel.sh">
-            subdomain-1.vercel.sh
+          <Link href="https://rad-subdomain-1.vercel.app">
+            rad-subdomain-1.vercel.app
           </Link>
         </li>
         <li>
-          <Link href="https://subdomain-2.vercel.sh">
-            subdomain-2.vercel.sh
+          <Link href="https://subdomain-2.vercel.app">
+            subdomain-2.vercel.app
           </Link>
         </li>
         <li>
-          <Link href="https://subdomain-3.vercel.sh">
-            subdomain-3.vercel.sh
+          <Link href="https://subdomain-3.vercel.app">
+            subdomain-3.vercel.app
           </Link>
         </li>
         <li>
           <Link href="https://custom-domain-1.com">custom-domain-1.com</Link>{' '}
           (maps to{' '}
-          <Link href="https://subdomain-1.vercel.sh">
-            subdomain-1.vercel.sh
+          <Link href="https://rad-subdomain-1.vercel.app">
+            rad-subdomain-1.vercel.app
           </Link>
           )
         </li>
