@@ -37,12 +37,12 @@ export default function Index(props) {
         </li>
         <li>
           <Link href="https://subdomain-2.vercel.app">
-            subdomain-2.vercel.app
+            rad-subdomain-2.vercel.app
           </Link>
         </li>
         <li>
           <Link href="https://subdomain-3.vercel.app">
-            subdomain-3.vercel.app
+            rad-subdomain-3.vercel.app
           </Link>
         </li>
         <li>

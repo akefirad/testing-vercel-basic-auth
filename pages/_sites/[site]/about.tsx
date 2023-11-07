@@ -31,7 +31,7 @@ export default function About(props) {
         <b>Properties</b>: {props.description}
       </Text>
       <Text className="mb-2">
-        <b>Subdomain</b>: {props.subdomain}.vercel.sh
+        <b>Subdomain</b>: {props.subdomain}.vercel.app
       </Text>
       <Text className="mb-2">
         <b>Custom Domain</b>: {props.customDomain || 'none'}
