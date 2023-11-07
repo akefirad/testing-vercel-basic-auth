@@ -3,10 +3,9 @@ const hostnamesDB = [
     name: 'Site 1',
     description: 'Subdomain + custom domain',
     subdomain: 'rad-subdomain-1',
-    customDomain: null,
     // customDomain: 'custom-domain-1.com',
     // Default subdomain for Preview deployments and for local development
-    defaultForPreview: true,
+    // defaultForPreview: true,
   },
   {
     name: 'Site 2',
@@ -19,7 +18,11 @@ const hostnamesDB = [
     subdomain: 'rad-subdomain-3',
   },
 ]
-const DEFAULT_HOST = hostnamesDB.find((h) => h.defaultForPreview)
+const DEFAULT_HOST = {
+  name: 'Site 0',
+  description: 'default',
+  subdomain: 'rad-subdomain-0',
+}
 
 /**
  * Returns the data of the hostname based on its subdomain or custom domain
@@ -38,9 +41,7 @@ export async function getHostnameDataOrDefault(
   // fetch data from mock database using the site value as the key
   return (
     hostnamesDB.find((item) =>
-      customDomain
-        ? item.customDomain === subdomainOrCustomDomain
-        : item.subdomain === subdomainOrCustomDomain
+        item.subdomain === subdomainOrCustomDomain
     ) ?? DEFAULT_HOST
   )
 }
